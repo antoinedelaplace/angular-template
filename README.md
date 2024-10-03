@@ -1,27 +1,33 @@
-# LocauxLoco
+# Angular Template Boilerplate
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.0.10.
+This project is an Angular boilerplate designed to facilitate application development by providing a solid structure and integrated features (and examples).
 
-## Development server
+## Features
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+- **State Management**: Uses NgRx for state management.
+- **OAuth2 Auth**: Secure authentication (and an example with Google).
+- **Lazy Loading**: Deferred loading of modules.
+- **Reactive Forms**: Uses Reactive Forms with validation.
+- **API service + HTTP Interceptors**: Handles errors and http requests.
+- **Tailwind integration**
+- **EsLint & Prettier**
 
-## Code scaffolding
+## Installation
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Clone the repository and install the dependencies:
 
-## Build
+`git clone https://github.com/antoinedelaplace/angular-template.git`
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+`cd angular-template`
 
-## Running unit tests
+`npm install`
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## Starting the Application
 
-## Running end-to-end tests
+`ng serve`
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+Access http://localhost:4200 in your browser.
 
-## Further help
+## Contributing
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+Contributions are welcome! Feel free to submit pull requests.
