@@ -12,6 +12,7 @@ This project is an Angular boilerplate designed to facilitate application develo
 - **Tailwind integration**
 - **EsLint & Prettier**
 - **CI/CD**
+- **Husky pre-commit**
 
 ## Features
 
