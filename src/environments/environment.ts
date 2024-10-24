@@ -1,4 +1,5 @@
 export const environment = {
 	production: true,
-	googleRedirectURL: ''
+	googleRedirectURL:
+		'https://antoinedelaplace.github.io/angular-template/google-redirect'
 };
