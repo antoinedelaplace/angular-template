@@ -14,6 +14,8 @@ import { selectAllUsers } from './store';
 import { addUser } from './store/user.actions';
 import { User } from './store/user.model';
 
+import { NotificationService } from '../../core/notification/notification.service';
+
 @Component({
 	selector: 'app-users',
 	standalone: true,
@@ -29,7 +31,8 @@ export class UsersComponent {
 
 	public constructor(
 		private store: Store,
-		private fb: FormBuilder
+		private fb: FormBuilder,
+		private notificationService: NotificationService
 	) {
 		this.userForm = this.fb.nonNullable.group({
 			name: ['', [Validators.required]],
@@ -45,7 +48,21 @@ export class UsersComponent {
 					user: { ...this.userForm.getRawValue(), id: Math.random().toString() }
 				})
 			);
+			this.showSuccessNotification();
 			this.userForm.reset();
+		} else {
+			this.showErrorNotification();
 		}
+	}
+
+	public showSuccessNotification(): void {
+		this.notificationService.showNotification(
+			'User have been added!',
+			'success'
+		);
+	}
+
+	public showErrorNotification(): void {
+		this.notificationService.showNotification('Form is not valid', 'warning');
 	}
 }
