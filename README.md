@@ -2,15 +2,21 @@
 
 This project is an Angular boilerplate designed to facilitate application development by providing a solid structure and integrated features (and examples).
 
-## Features
+## Technical settings
 
 - **State Management**: Uses NgRx for state management.
 - **OAuth2 Auth**: Secure authentication (and an example with Google).
-- **Lazy Loading**: Deferred loading of modules.
+- **Routing & Lazy Loading**: Deferred loading of modules.
 - **Reactive Forms**: Uses Reactive Forms with validation.
 - **API service + HTTP Interceptors**: Handles errors and http requests.
 - **Tailwind integration**
 - **EsLint & Prettier**
+- **CI/CD**
+
+## Features
+
+- **Notification system**
+- **Basic layout with headers & footers**
 
 ## Installation
 
