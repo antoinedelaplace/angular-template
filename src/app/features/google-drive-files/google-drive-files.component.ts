@@ -13,7 +13,6 @@ import { GoogleDriveAuthService } from './services/google-drive-auth.service';
 
 @Component({
 	selector: 'app-google-drive-files',
-	standalone: true,
 	imports: [],
 	templateUrl: './google-drive-files.component.html'
 })

@@ -8,7 +8,6 @@ import { NotificationService } from './core/notification/notification.service';
 
 @Component({
 	selector: 'app-root',
-	standalone: true,
 	imports: [CommonModule, RouterModule, FooterComponent, HeaderComponent],
 	templateUrl: './app.component.html'
 })

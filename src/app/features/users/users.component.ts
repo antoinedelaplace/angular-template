@@ -18,7 +18,6 @@ import { NotificationService } from '../../core/notification/notification.servic
 
 @Component({
 	selector: 'app-users',
-	standalone: true,
 	imports: [CommonModule, ReactiveFormsModule],
 	templateUrl: './users.component.html'
 })
