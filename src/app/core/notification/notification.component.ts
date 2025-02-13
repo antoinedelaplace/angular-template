@@ -1,4 +1,9 @@
-import { Component, ComponentRef, Input } from '@angular/core';
+import {
+	ChangeDetectionStrategy,
+	Component,
+	ComponentRef,
+	Input
+} from '@angular/core';
 
 import { NotificationService } from './notification.service';
 
@@ -7,7 +12,7 @@ export type NotificationType = 'error' | 'success' | 'warning';
 @Component({
 	selector: 'app-notification',
 	templateUrl: './notification.component.html',
-	standalone: true
+	changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class NotificationComponent {
 	@Input() message!: string;

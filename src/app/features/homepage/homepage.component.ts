@@ -1,8 +1,9 @@
-import { Component } from '@angular/core';
+import { ChangeDetectionStrategy, Component } from '@angular/core';
 
 @Component({
 	selector: 'app-homepage',
 	imports: [],
-	templateUrl: './homepage.component.html'
+	templateUrl: './homepage.component.html',
+	changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class HomepageComponent {}

@@ -1,8 +1,8 @@
-import { Component, OnInit } from '@angular/core';
+import { ChangeDetectionStrategy, Component, OnInit } from '@angular/core';
 
 @Component({
-	standalone: true,
 	selector: 'app-google-redirect',
+	changeDetection: ChangeDetectionStrategy.OnPush,
 	template: `
 		<p>Authentification en cours...</p>
 	`

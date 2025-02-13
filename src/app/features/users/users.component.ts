@@ -1,5 +1,5 @@
 import { CommonModule } from '@angular/common';
-import { Component, signal } from '@angular/core';
+import { ChangeDetectionStrategy, Component, signal } from '@angular/core';
 import {
 	FormBuilder,
 	FormControl,
@@ -19,7 +19,8 @@ import { NotificationService } from '../../core/notification/notification.servic
 @Component({
 	selector: 'app-users',
 	imports: [CommonModule, ReactiveFormsModule],
-	templateUrl: './users.component.html'
+	templateUrl: './users.component.html',
+	changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class UsersComponent {
 	public users = signal<User[]>([]);
