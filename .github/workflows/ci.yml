@@ -11,7 +11,8 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
-
+    permissions:
+      contents: write
     steps:
       - name: Checkout code
         uses: actions/checkout@v3
@@ -35,5 +36,5 @@ jobs:
 
       - name: Deploy to GitHub Pages
         env:
-          GH_TOKEN: ${{ secrets.GH_TOKEN }}
-        run: npm run ng -- deploy --base-href=/angular-template/ --repo=https://GH_TOKEN@github.com/antoinedelaplace/angular-template.git --name="Antoine DELAPLACE" --email=antoine.delaplace@gmail.com
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: npm run ng -- deploy --base-href=/angular-template/ --repo=https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/antoinedelaplace/angular-template.git --name="Antoine DELAPLACE" --email=antoine.delaplace@gmail.com
